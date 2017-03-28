@@ -4,15 +4,15 @@ import moment from 'moment'
 import './App.css';
 
 const Menu = ({restaurant, items}) => {
-    return <div>
-        <div className="restaurant">
+    return <div className="daily-menu">
+        <h1 className="restaurant">
             {restaurant.name}
-        </div>
-        <div className="food">
+        </h1>
+        <div className="dishes">
             {items.map((item, i) => {
-                return <div key={i}>
-                    <span className="name">{item.name}</span>
-                    <span className="price">{item.price} EUR</span>
+                return <div className="dish" key={i}>
+                    <div className="name">{item.name}</div>
+                    <div className="price">{item.price} €</div>
                 </div>
             })}
         </div>

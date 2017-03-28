@@ -25,12 +25,16 @@ class App extends Component {
         const {menus} = this.state
         return (
             <div className="app">
-                <div>Today is {this.today}</div>
-                <div>On the menu is:</div>
-                {!menus && 'Loading menus'}
-                {menus && menus.map((m, i) => {
-                    return <Menu {...m} key={i}/>
-                })}
+                <header>
+                    <h1>Lunchagator</h1>
+                    <h2>today is {this.today}</h2>
+                </header>
+                <section className="menus">
+                    {!menus && 'Loading menus'}
+                    {menus && menus.map((m, i) => {
+                        return <Menu {...m} key={i}/>
+                    })}
+                </section>
             </div>
         );
     }
