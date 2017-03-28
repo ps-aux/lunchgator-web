@@ -6,7 +6,9 @@ import './App.css';
 const Menu = ({restaurant, items}) => {
     return <div className="daily-menu">
         <h1 className="restaurant">
-            {restaurant.name}
+            <a href={restaurant.url} target="_blank">
+                {restaurant.name}
+            </a>
         </h1>
         <div className="dishes">
             {items.map((item, i) => {
