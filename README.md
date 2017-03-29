@@ -4,15 +4,16 @@ Web front-end of lunchagator - lunch menu aggregator
 
 Built using [create-react-app](https://github.com/facebookincubator/create-react-app) and [Firebase](https://firebase.google.com)
 
-Start dev server:
+#####start dev server
 
 `npm start`
 
-Build:
+This assumes api root on `http://localhost:8080`
 
-`npm run build`
 
-Deploy:
+##### build & deploy
 
-`firebase deploy --only hosting` (requires Firebase admin session)
+`./deploy.sh`
+
+This requires to be logged in Firebase tools
 
