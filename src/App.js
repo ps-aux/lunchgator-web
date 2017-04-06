@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {getMenus} from './api/dailyMenuService'
+import {getMenus, getRestaurants} from './api/dailyMenuService'
 import moment from 'moment'
 import './App.css';
 import Menu from './Menu'

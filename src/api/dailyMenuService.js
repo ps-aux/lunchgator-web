@@ -1,6 +1,9 @@
-const apiRoot = process.env.REACT_APP_API_ROOT
+import apiClient from './apiClient'
 
 export function getMenus() {
-    return fetch(`${apiRoot}/menu/today`)
-        .then(r => r.json())
+    return apiClient.get('/menu/today')
+}
+
+export function getRestaurants() {
+    return apiClient.get('/restaurants')
 }
