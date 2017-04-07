@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {getMenus, getRestaurants} from './api/dailyMenuService'
 import moment from 'moment'
-import './App.css';
+import './style/index.css'
 import Menu from './Menu'
 
 class App extends Component {

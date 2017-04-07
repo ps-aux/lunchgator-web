@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {getMenus} from './api/dailyMenuService'
 import moment from 'moment'
-import './App.css';
 
 const Menu = ({restaurant, items}) => {
     return <div className="daily-menu">
