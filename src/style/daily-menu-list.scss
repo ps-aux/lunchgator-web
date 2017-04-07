@@ -1,0 +1,16 @@
+.daily-menu-list {
+  display: inline-block;
+  text-align: left;
+  width: 70%;
+
+  .filter {
+    padding-top: 10px;
+    * {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    .search {
+      width: 300px;
+    }
+  }
+}

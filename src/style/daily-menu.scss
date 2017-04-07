@@ -1,0 +1,15 @@
+.daily-menu {
+  h1 {
+    font-size: 24px;
+  }
+  .dish {
+    font-size: 16px;
+    div {
+      display: inline-block;
+    }
+    .price {
+      float: right;
+      font-size: 90%;
+    }
+  }
+}

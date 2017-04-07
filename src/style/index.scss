@@ -1,4 +1,8 @@
 @import "variables.scss";
+@import "form.scss";
+@import "daily-menu.scss";
+@import "daily-menu-list.scss";
+@import "spinner.scss";
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -15,28 +19,6 @@ header {
 .app {
   text-align: center;
   margin: auto;
-}
-
-.menus {
-  display: inline-block;
-  text-align: left;
-  max-width: 900px;
-}
-
-.daily-menu {
-  h1 {
-    font-size: 24px;
-  }
-  .dish {
-    font-size: 16px;
-    div {
-      display: inline-block;
-    }
-    .price {
-      float: right;
-      font-size: 90%;
-    }
-  }
 }
 
 a, a:hover, a:active, a:visited {
