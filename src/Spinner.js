@@ -5,31 +5,36 @@ class Spinner extends Component {
 
     constructor(props) {
         super(props)
+        this.state = {shown: false}
 
         enhance(this)
+    }
+
+    componentDidMount() {
+        this.mounted = true
+        setTimeout(() => {
+            if (this.mounted)
+                this.setState({shown: true})
+        }, 500)
+    }
+
+    componentWillUnmount() {
+        this.mounted = false
     }
 
     render() {
         return (
             <div className="spinner">
-                <div id="cooking">
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div id="area">
-                        <div id="sides">
-                            <div id="pan"></div>
-                            <div id="handle"></div>
-                        </div>
-                        <div id="pancake">
-                            <div id="pastry"></div>
-                        </div>
-                    </div>
-                </div>
+                {this.state.shown && this.renderSpinner()}
             </div>)
     }
+
+    renderSpinner() {
+        return <div>
+            Yeah, your data is loading...
+        </div>
+    }
+
 }
 
 export default Spinner
